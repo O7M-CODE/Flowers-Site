@@ -987,3 +987,64 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   animation-play-state: paused !important;
 }
 
+
+.layan {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffb6e6;
+  opacity: 0;
+  animation: fadeInUp 2s ease forwards;
+  animation-delay: 2s;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #ff8ad7, 0 0 20px #ff8ad7;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.layan {
+  position: absolute;   
+  top: 50%;            
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #fff;          
+  z-index: 999;     
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5); 
+}
+.flower--1 {
+    position: relative;
+}
+
+.flower__name {
+    position: absolute;
+    bottom: 90px; 
+    left: 50%;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #38d6df;
+    opacity: 0;
+     transform: scale(5); 
+    transform-origin: bottom center; 
+    
+    
+}
+
+.flower--1.grown .flower__name {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+}
+
+
